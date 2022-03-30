@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title> Javascript</title>
+        <style type="text/css">
+            .circle{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                float: left;
+                margin: 50px;
+            }
+            #red-circle {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+       
+
+        <p id="text">
+            hello world!
+        </p>
+        <button id="myButton">Change text</button>
+
+        <p id="secondParagraph">Javascript is ...</p>
+        <button id="secondButton"> Append text</button>
+
+        <p id="newParagraph"></p>
+        <button id="newButton">Show text, CLick here</button>
+
+        <p id="moreText">This is some more text</p>
+        <button id="styleText"> Style Text</button>
+        <div class="circle" id="red-circle">
+
+        </div>
+
+       
+
+        <script type="text/javascript">
+            // this is a line comment 
+            /* 
+
+            this is a multi line comment
+            */
+            document.getElementById("myButton").onclick = function() {
+                alert("Button clicked");
+                document.getElementById("text").innerHTML = "hello everyone";
+                
+            }
+            document.getElementById("secondButton").onclick = function() {
+                alert("Button clicked");
+                document.getElementById("secondParagraph").innerHTML = "I think .." + document.getElementById("secondParagraph").innerHTML + "awesome";
+                
+            }
+            document.getElementById("newButton").onclick = function() {
+                alert("Button clicked");
+                document.getElementById("newParagraph").innerHTML = "This text just appered";
+                
+            }
+            document.getElementById("styleText").onclick = function(){
+                document.getElementById("moreText").style.fontSize = "50px";
+                document.getElementById("moreText").style.color = "red";
+            }
+            document.getElementById("red-circle").onclick = function() {
+                document.getElementById("red-circle").style.display = "none";
+            }
+        </script>
+        
+        
+    </body>
+</html>

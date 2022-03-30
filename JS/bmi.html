@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <p> 
+        Men: BMR = 88.362 + (13.397 x weight in kg) + (4.799 x height in cm) – (5.677 x age in years) <br>
+        Women: BMR = 447.593 + (9.247 x weight in kg) + (3.098 x height in cm) – (4.330 x age in years)
+    </p>
+    
+    <input type="radio" id="maleChoice" value="male" name="choice" onclick="displayDiv()" >
+    <label for="maleChoice"> Male</label>
+    <input type="radio" id="femaleChoice" value="female" name="choice" onclick="displayDiv()" >
+    <label for="femaleChoice"> Female</label>
+    
+
+
+    <div id="inputDisplay">
+    <input type="text" id="textAge"> Age
+    <br>
+    <input type="text" id="textHeight"> Height cm
+    <br>
+    <input type="text" id="textWeight"> Weight kg
+    
+    <br>
+    <button id="buttonCalc">Calculate</button>
+
+    <p >the total is : <span id="bmiTotal" ></span></p>
+    </div>
+
+    <script type = "text/javascript" src="app.js">
+        
+
+
+    </script>
+</body>
+</html>

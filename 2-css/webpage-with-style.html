@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webpage with style </title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+            #box-red{
+                background-color: red;
+               
+                
+            }
+            #box-blue{
+                background-color: blue;
+              
+                
+            }
+            #box-green{
+                background-color: green;
+                border-radius: 50%;
+             
+            }
+            
+            /* 
+            .red{
+                color: red;
+            }
+            .large{
+                font-size: 200%;
+            }
+            #green{
+                color: green;
+            }
+            #first-section{
+                color: blue;
+                background-color: pink;
+                width: 200px;
+                padding: 5px 10px;
+                box-sizing: border-box;
+                position: relative;
+                left: 100px;
+
+
+            }
+            #second-section{
+                background-color: yellow;
+                width: 200px;
+                opacity: 0.5;
+            }
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            */
+            .square{
+                width: 100px;
+                height: 100px;
+                margin: 40px;
+                float: left;
+            }
+            .boarder{
+                border: 10px black solid;
+            }
+            /*
+            p{
+                font-family: 'Shadows Into Light', cursive;
+            }
+            */
+            p{
+                font-weight: bold;
+            }
+            .bold{
+                font-style: bold;
+            }
+            .italic{
+                font-style: italic;
+            }
+            .underline{
+                text-decoration: underline ;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+                color: green;
+            }
+        </style> 
+        
+    </head>
+    <body>
+        <p> this is some funky text</p>
+        <p class="bold"> this is some bold text</p>
+        <p class="italic"> this is some italic <span class="bold">And this is some bold and italic</span></p>
+        <p class="underline"> this is some underline text</p>
+        <a href="http://www.google.com" target="_black">this is a non-unerlined link</a>
+        <!--
+        <div id="first-section">
+
+        
+            <p > this is CSS styling </p>
+            <p > another line lets see </p>
+        </div>
+        <div id="second-section">
+            <h1 class="red">Css is nice</h1>
+
+            <p id="green">This is some green text</p>
+        </div>
+        -->
+        <div id="box-red" class="square boarder" ></div>
+        <div id="box-blue" class="square boarder"></div>
+        <div id="box-green"class="square"></div>
+        <!--
+        <p style="color: blue; font-size: 200%">This is just an in-line CSS way to implement</p>
+        <h1 style="color: green;font-size: 300%;"> CSS is cool </h1>
+        -->
+    </body>
+</html>
